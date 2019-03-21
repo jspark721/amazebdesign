@@ -1,6 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700|Karma:300,400');
+
+$body: 'Karla', sans-serif;
+$display: 'Karma', serif;
+
 $white: #FFFFFF;
 
 body {
   margin: 0;
   background: $white;
+}
+
+
+.sidenav-links {
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  p {
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-family: $body;
+    font-weight: 700;
+  }
+  a {
+    font-family: $display;
+    font-size: 3em;
+    letter-spacing: -1px;
+    font-weight: 300;
+    text-decoration: none;
+    color: black;
+  }
 }
