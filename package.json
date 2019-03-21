@@ -1,0 +1,23 @@
+{
+  "name": "amazebdesign",
+  "version": "1.0.0",
+  "description": "Website Design + Development for acai bowl company",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jspark721/amazebdesign.git"
+  },
+  "author": "Julie Park",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jspark721/amazebdesign/issues"
+  },
+  "homepage": "https://github.com/jspark721/amazebdesign#readme",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
