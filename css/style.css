@@ -3,6 +3,9 @@ body {
   margin: 0;
   background: #FFFFFF; }
 
+.close {
+  display: none; }
+
 .nav {
   margin-top: 3em; }
 
