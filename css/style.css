@@ -3,20 +3,23 @@ body {
   margin: 0;
   background: #FFFFFF; }
 
+.navbar-open-icon {
+  cursor: pointer; }
+
 .close {
   display: none; }
 
 .nav {
   margin-top: 3em; }
 
-.navbar-icon {
+.navbar-close-icon {
   position: absolute;
   right: 1.8em;
   top: 1.8em;
   cursor: pointer;
   width: 45px;
   height: 45px; }
-  .navbar-icon:hover .icon-line {
+  .navbar-close-icon:hover .icon-line {
     background: #9685BF; }
 
 .icon-line {

@@ -13,6 +13,9 @@ body {
 }
 .navbar-main-menu {
 }
+.navbar-open-icon {
+  cursor: pointer;
+}
 
 .close {
   display: none;
@@ -21,7 +24,7 @@ body {
 .nav {
   margin-top: 3em;
 }
-.navbar-icon {
+.navbar-close-icon {
   position: absolute;
   right: 1.8em;
   top: 1.8em;
