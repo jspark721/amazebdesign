@@ -4,7 +4,11 @@ $body: 'Karla', sans-serif;
 $display: 'Karma', serif;
 
 $white: #FFFFFF;
-$main: #9685BF;
+$purple: #B49EBF;
+$blue: #94ADD3;
+$green: #BCE0A8;
+$cream: #F4EBCB;
+$pink: #FCC8C2;
 $dark: #000000;
 
 body {
@@ -15,6 +19,7 @@ body {
 }
 .navbar-open-icon {
   cursor: pointer;
+  border: 1px solid $dark;
 }
 
 .close {
@@ -33,7 +38,7 @@ body {
   height: 45px;
   &:hover {
     .icon-line {
-      background: $main;
+      background: $purple;
     }
   }
 }
