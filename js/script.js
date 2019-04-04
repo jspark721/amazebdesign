@@ -1,6 +1,6 @@
 let close = document.querySelector('.navbar-close-icon');
 let open = document.querySelector('.navbar-open-icon')
-let menu = document.querySelector('.navbar-main-menu');
+let menu = document.querySelector('.navbar-main');
 
 close.addEventListener('click', function() {
   menu.classList.toggle('close');
