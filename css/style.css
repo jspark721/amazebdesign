@@ -4,7 +4,32 @@ body {
   background: #FFFFFF; }
 
 .navbar-open-icon {
+  margin: 20px;
+  height: 45px;
+  width: 45px;
+  position: relative;
   cursor: pointer; }
+  .navbar-open-icon:hover .line {
+    background: #B49EBF; }
+
+.line {
+  position: absolute;
+  left: 10px;
+  height: 2px;
+  border-radius: 120px;
+  background: #000000; }
+
+.top {
+  width: 65%;
+  top: 10px; }
+
+.middle {
+  width: 100%;
+  top: 23px; }
+
+.bottom {
+  width: 80%;
+  top: 37px; }
 
 .close {
   display: none; }
@@ -14,13 +39,13 @@ body {
 
 .navbar-close-icon {
   position: absolute;
-  right: 1.8em;
-  top: 1.8em;
+  right: 20px;
+  top: 20px;
   cursor: pointer;
   width: 45px;
   height: 45px; }
   .navbar-close-icon:hover .icon-line {
-    background: #9685BF; }
+    background: #B49EBF; }
 
 .icon-line {
   position: absolute;
