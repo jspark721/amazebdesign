@@ -20,13 +20,20 @@ button {
   transition: all 0.2s ease-out; }
 
 #navbar {
-  position: absolute;
+  overflow: hidden;
   width: 100%;
   height: 11%;
-  bottom: 0;
-  background: #F4ECE6;
+  background: #EFEADC;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; }
+
+.navbar-bottom {
+  position: absolute;
+  bottom: 0; }
+
+.sticky {
+  position: fixed;
+  top: 0; }
 
 .navbar-open-icon {
   display: block;
@@ -36,35 +43,35 @@ button {
   position: relative;
   cursor: pointer; }
   .navbar-open-icon:hover .line {
-    background: #B49EBF; }
+    background: #9F96CC; }
 
 .navbar-logo {
-  margin-top: 27px;
+  margin-top: 35px;
   text-align: center; }
   .navbar-logo h3 {
     margin: 0;
     color: #261F1F;
     font-family: "Karla", sans-serif;
     font-weight: 700;
-    letter-spacing: .3em;
-    font-size: 2em;
+    letter-spacing: .2em;
+    font-size: 1.5em;
     text-transform: uppercase; }
 
 .navbar-order {
-  margin-top: 20px;
-  margin-right: 20px;
+  margin-top: 22px;
+  margin-right: 25px;
   text-align: right; }
 
 .order-btn {
-  background: #F4ECE6;
+  background: #EFEADC;
   border: 1.5px solid #261F1F;
   border-radius: 25px;
   font-weight: 700; }
   .order-btn:hover {
-    background: #B49EBF;
+    background: #9BC0D3;
     color: #FFFFFF;
     transition: all 0.2s ease-out;
-    border-color: #B49EBF; }
+    border-color: #9BC0D3; }
 
 .line {
   position: absolute;
@@ -86,8 +93,8 @@ button {
   top: 37px; }
 
 .nav-main {
-  position: absolute;
-  background: #F4ECE6;
+  position: fixed;
+  background: #9BC0D3;
   height: 100vh;
   width: 100%;
   overflow: hidden;
@@ -113,7 +120,7 @@ button {
   width: 45px;
   height: 45px; }
   .nav-close-icon:hover .icon-line {
-    background: #B49EBF; }
+    background: #9F96CC; }
 
 .icon-line {
   position: absolute;
@@ -152,7 +159,7 @@ button {
     left: 0;
     width: 0%;
     border-bottom: -5px;
-    border-bottom: 7px solid #A7C4EF;
+    border-bottom: 7px solid #EFEADC;
     transition: 0.4s; }
     .slide-out::after:hover {
       width: 100%; }
@@ -174,21 +181,28 @@ button {
   height: 2px;
   top: 11.5%;
   left: 47.5%;
-  background: #A7C4EF; }
+  background: #EFEADC; }
 
 .nav-social {
   height: 100px;
   padding-top: 25px; }
   .nav-social i {
     padding: 30px;
-    color: #A7C4EF;
+    color: #EFEADC;
     transition: all 0.4s ease;
     font-size: 18px; }
     .nav-social i:hover {
-      color: #B49EBF;
+      color: #FFFFFF;
       transition: all 0.4s ease;
       transform: scale(1.3); }
 
 section {
   height: 100vh;
-  width: 100%; }
+  width: 100%;
+  background: #EFEADC; }
+
+.landing-container {
+  background-image: url("/img/hero-img.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }

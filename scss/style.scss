@@ -4,11 +4,12 @@ $sans: 'Karla', sans-serif;
 $serif: 'Karma', serif;
 
 $white: #FFFFFF;
-$purple: #B49EBF;
-$blue: #A7C4EF;
-$green: #BCE0A8;
-$cream: #F4ECE6;
-$pink: #FCC8C2;
+$purple: #9F96CC;
+$blue: #9BC0D3;
+$yellow: #E8DD91;
+$green: #A5C495;
+$cream: #EFEADC;
+$pink: #D0A7B1;
 $dark: #261F1F;
 
 $ease: all .4s ease;
@@ -39,14 +40,24 @@ button {
 
 
 #navbar {
-  position: absolute;
+  overflow: hidden;
   width: 100%;
   height: 11%;
-  bottom: 0;
   background: $cream;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
+
+.navbar-bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+}
+
 .navbar-open-icon {
   display: block;
   margin: 20px;
@@ -61,21 +72,21 @@ button {
   }
 }
 .navbar-logo {
-  margin-top: 27px;
+  margin-top: 35px;
   text-align: center;
   h3 {
     margin: 0;
     color: $dark;
     font-family: $sans;
     font-weight: 700;
-    letter-spacing: .3em;
-    font-size: 2em;
+    letter-spacing: .2em;
+    font-size: 1.5em;
     text-transform: uppercase;
   }
 }
 .navbar-order {
-  margin-top: 20px;
-  margin-right: 20px;
+  margin-top: 22px;
+  margin-right: 25px;
   text-align: right;
 }
 .order-btn {
@@ -84,10 +95,10 @@ button {
   border-radius: 25px;
   font-weight: 700;
   &:hover {
-    background: $purple;
+    background: $blue;
     color: $white;
     transition: $fast;
-    border-color: $purple;
+    border-color: $blue;
   }
 }
 
@@ -112,8 +123,8 @@ button {
 }
 
 .nav-main {
-  position: absolute;
-  background: $cream;
+  position: fixed;
+  background: $blue;
   height: 100vh;
   width: 100%;
   overflow: hidden;
@@ -188,7 +199,7 @@ button {
     left: 0;
     width: 0%;
     border-bottom: -5px;
-    border-bottom: 7px solid $blue;
+    border-bottom: 7px solid $cream;
     transition: 0.4s;
     &:hover {
       width: 100%;
@@ -213,18 +224,18 @@ button {
   height: 2px;
   top: 11.5%;
   left: 47.5%;
-  background: $blue;
+  background: $cream;
 }
 .nav-social {
   height: 100px;
   padding-top: 25px;
   i {
     padding: 30px;
-    color: $blue;
+    color: $cream;
     transition: $ease;
     font-size: 18px;
     &:hover {
-      color: $purple;
+      color: $white;
       transition: $ease;
       transform: scale(1.3);
     }
@@ -234,7 +245,11 @@ button {
 section {
   height: 100vh;
   width: 100%;
+  background: $cream;
 }
 .landing-container {
-
+  background-image: url('/img/hero-img.png');
+  background-position: center ;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
