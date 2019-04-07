@@ -23,7 +23,6 @@ button {
   overflow: hidden;
   width: 100%;
   height: 11%;
-  background: #EFEADC;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; }
 
@@ -38,13 +37,13 @@ button {
 
 .navbar-open-icon {
   display: block;
-  margin: 20px;
+  margin: 20px 20px 20px 25px;
   height: 45px;
   width: 45px;
   position: relative;
   cursor: pointer; }
   .navbar-open-icon:hover .line {
-    background: #9F96CC; }
+    background: #A48ECC; }
 
 .navbar-logo {
   margin-top: 35px;
@@ -64,15 +63,15 @@ button {
   text-align: right; }
 
 .order-btn {
-  background: #EFEADC;
+  background: transparent;
   border: 1.5px solid #261F1F;
   border-radius: 25px;
   font-weight: 700; }
   .order-btn:hover {
-    background: #9BC0D3;
+    background: #83A1E2;
     color: #FFFFFF;
     transition: all 0.2s ease-out;
-    border-color: #9BC0D3; }
+    border-color: #83A1E2; }
 
 .line {
   position: absolute;
@@ -95,11 +94,11 @@ button {
 
 .nav-main {
   position: fixed;
-  background: #9BC0D3;
-  height: 100vh;
+  background: #83A1E2;
   width: 100%;
-  overflow: hidden;
+  height: 100%;
   opacity: 1;
+  z-index: 4;
   transition: all 0.4s ease; }
 
 .close {
@@ -121,7 +120,7 @@ button {
   width: 45px;
   height: 45px; }
   .nav-close-icon:hover .icon-line {
-    background: #9F96CC; }
+    background: #FFFFFF; }
 
 .icon-line {
   position: absolute;
@@ -138,7 +137,9 @@ button {
   height: 100vh;
   text-align: center;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  align-content: space-between;
+  overflow-y: scroll; }
   .nav-links a {
     font-family: "Karma", serif;
     font-size: 3.3em;
@@ -159,7 +160,6 @@ button {
     bottom: 0;
     left: 0;
     width: 0%;
-    border-bottom: -5px;
     border-bottom: 7px solid #EFEADC;
     transition: 0.4s; }
     .slide-out::after:hover {
@@ -186,7 +186,8 @@ button {
 
 .nav-social {
   height: 100px;
-  padding-top: 25px; }
+  padding-top: 25px;
+  margin-bottom: 70px; }
   .nav-social i {
     padding: 30px;
     color: #EFEADC;
@@ -201,25 +202,71 @@ section {
   height: 100vh;
   width: 100%;
   z-index: 1;
-  background: #EFEADC; }
+  background: #FFFFFF; }
 
 .landing-container {
-  background-image: url("/img/hero-img.png");
+  position: relative;
+  background-image: url("/img/main.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
 
-.landing--line {
+.landing-texts {
+  position: absolute;
+  width: 100%;
+  height: 100%; }
+
+.landing-left {
+  font-family: "Karma", serif;
+  margin-top: 55px;
+  margin-left: 25px;
+  font-weight: 300;
+  font-size: 1.5em;
+  writing-mode: vertical-rl;
+  transform: rotate(-180deg); }
+
+.landing-left-line {
   position: fixed;
-  width: 95%;
-  height: 100%;
-  left: 2.5%;
-  top: 6%;
-  border-radius: 35px;
-  border: 1px solid #EFEADC; }
+  margin-left: 38px;
+  margin-top: 40px;
+  height: 320px;
+  width: 3px;
+  background: #A48ECC; }
+  .landing-left-line:before {
+    content: '';
+    background: #83A1E2;
+    width: 3px;
+    height: 350px;
+    margin-left: 10px;
+    top: -90px;
+    position: absolute; }
 
-.smaller {
-  width: 90%;
-  height: 100%;
-  left: 5%;
-  top: 2.5%; }
+.landing-est {
+  font-family: "Karla", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.2em;
+  margin-bottom: 40px; }
+
+.landing-desc {
+  font-family: "Karma", serif;
+  font-weight: 300;
+  font-size: 1.9em;
+  width: 42%;
+  height: 22%;
+  position: absolute;
+  top: 38px;
+  left: 115px;
+  line-height: 1.3em; }
+  .landing-desc .pink {
+    background: rgba(239, 179, 207, 0.7); }
+
+.landing-desc-line {
+  margin-top: -20px;
+  margin-bottom: 30px;
+  width: 100px;
+  height: 8px;
+  background: #FCE479; }

@@ -4,13 +4,15 @@ $sans: 'Karla', sans-serif;
 $serif: 'Karma', serif;
 
 $white: #FFFFFF;
-$purple: #9F96CC;
-$blue: #9BC0D3;
-$yellow: #E8DD91;
+$purple: #A48ECC;
+$blue: #83A1E2;
+$yellow: #FCE479;
 $green: #A5C495;
 $cream: #EFEADC;
-$pink: #D0A7B1;
+$pink: #efb3cf;
 $dark: #261F1F;
+
+//amazebowls logo colors
 
 $ease: all .4s ease;
 $fast: all .2s ease-out;
@@ -43,7 +45,6 @@ button {
   overflow: hidden;
   width: 100%;
   height: 11%;
-  background: $cream;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -61,7 +62,7 @@ button {
 
 .navbar-open-icon {
   display: block;
-  margin: 20px;
+  margin: 20px 20px 20px 25px;
   height: 45px;
   width: 45px;
   position: relative;
@@ -91,7 +92,7 @@ button {
   text-align: right;
 }
 .order-btn {
-  background: $cream;
+  background: transparent;
   border: 1.5px solid $dark;
   border-radius: 25px;
   font-weight: 700;
@@ -126,10 +127,10 @@ button {
 .nav-main {
   position: fixed;
   background: $blue;
-  height: 100vh;
   width: 100%;
-  overflow: hidden;
+  height: 100%;
   opacity: 1;
+  z-index: 4;
   transition: $ease;
 }
 
@@ -154,7 +155,7 @@ button {
   height: 45px;
   &:hover {
     .icon-line {
-      background: $purple;
+      background: $white;
     }
   }
 }
@@ -175,6 +176,8 @@ button {
   text-align: center;
   display: flex;
   flex-direction: column;
+  align-content: space-between;
+  overflow-y: scroll;
   a {
     font-family: $serif;
     font-size: 3.3em;
@@ -199,7 +202,6 @@ button {
     bottom: 0;
     left: 0;
     width: 0%;
-    border-bottom: -5px;
     border-bottom: 7px solid $cream;
     transition: 0.4s;
     &:hover {
@@ -230,6 +232,7 @@ button {
 .nav-social {
   height: 100px;
   padding-top: 25px;
+  margin-bottom: 70px;
   i {
     padding: 30px;
     color: $cream;
@@ -247,27 +250,74 @@ section {
   height: 100vh;
   width: 100%;
   z-index: 1;
-  background: $cream;
+  background: $white;
 }
 .landing-container {
-  background-image: url('/img/hero-img.png');
+  position: relative;
+  background-image: url('/img/main.jpg');
   background-position: center ;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
-.landing--line {
+.landing-texts {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.landing-left {
+  font-family: $serif;
+  margin-top: 55px;
+  margin-left: 25px;
+  font-weight: 300;
+  font-size: 1.5em;
+  writing-mode: vertical-rl;
+  transform: rotate(-180deg);
+}
+.landing-left-line {
   position: fixed;
-  width: 95%;
-  height: 100%;
-  left: 2.5%;
-  top: 6%;
-  border-radius: 35px;
-  border: 1px solid $cream;
+  margin-left: 38px;
+  margin-top: 40px;
+  height: 320px;
+  width: 3px;
+  background: $purple;
+  &:before {
+    content: '';
+    background: $blue;
+    width: 3px;
+    height: 350px;
+    margin-left: 10px;
+    top: -90px;
+    position: absolute;
+  }
 }
-
-.smaller {
-  width: 90%;
-  height: 100%;
-  left: 5%;
-  top: 2.5%;
+.landing-est {
+  font-family: $sans;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.2em;
+  margin-bottom: 40px;
+}
+.landing-desc{
+  font-family:: $serif;
+  font-weight: 300;
+  font-size: 1.9em;
+  width: 42%;
+  height: 22%;
+  position: absolute;
+  top: 38px;
+  left: 115px;
+  line-height: 1.3em;
+  .pink {
+    background: rgba($pink, 0.7);
+  }
+}
+.landing-desc-line {
+  margin-top: -20px;
+  margin-bottom: 30px;
+  width: 100px;
+  height: 8px;
+  background: $yellow;
 }
