@@ -6,6 +6,8 @@
   height: 8%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; }
+  #navbar .logo {
+    margin-top: 27px; }
 
 .navbar-bottom {
   position: absolute;
@@ -26,27 +28,13 @@
   .navbar-open-icon:hover .line {
     background: #CCB3D8; }
 
-.navbar-logo {
-  margin-top: 35px;
-  text-align: center; }
-  .navbar-logo h3 {
-    margin: 0;
-    color: #261F1F;
-    font-family: "Karla", sans-serif;
-    font-weight: 700;
-    letter-spacing: .2em;
-    font-size: 1.5em;
-    text-transform: uppercase; }
-
 .navbar-order {
-  margin-top: 22px;
+  margin-top: 20px;
   margin-right: 25px;
   text-align: right; }
 
 .order-btn {
   background: transparent;
-  border: 1.5px solid #261F1F;
-  border-radius: 25px;
   font-weight: 700; }
   .order-btn:hover {
     background: #A7CBF2;
@@ -239,20 +227,21 @@ section {
   background: #FFFFFF;
   padding: 30px;
   position: relative; }
-  .landing-item1 .logo {
-    margin-top: 5px; }
-    .landing-item1 .logo h3 {
-      margin: 0;
-      font-family: "Karla", sans-serif;
-      font-size: 1.8em;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 8px; }
-    .landing-item1 .logo p {
-      margin: 5px 0;
-      font-size: .8em;
-      letter-spacing: 3px;
-      font-family: "Karma", serif; }
+
+.logo {
+  margin-top: 5px; }
+  .logo h3 {
+    margin: 0;
+    font-family: "Karla", sans-serif;
+    font-size: 1.8em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 8px; }
+  .logo p {
+    margin: 5px 0;
+    font-size: .8em;
+    letter-spacing: 3px;
+    font-family: "Karma", serif; }
 
 .landing-desc {
   margin-top: 25%;
