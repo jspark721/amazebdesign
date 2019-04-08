@@ -43,7 +43,7 @@ section {
 
 .landing-container {
   display: grid;
-  grid-template-columns: 1fr 2fr 1.5fr;
+  grid-template-columns: 1fr 1.5fr 1fr;
 }
 
 .landing-item1, .landing-item2, .landing-item3 {
@@ -55,41 +55,44 @@ section {
   padding: 20px;
   position: relative;
   .logo {
+    margin-top: 5px;
     font-family: $sans;
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 8px;
   }
   .menu-icon {
-    height: 40px;
-    width: 40px;
     position: absolute;
-    right: 20px;
-    top: 25px;
+    left: 15px;
+    bottom: 10px;
     cursor: pointer;
+    transition: $ease;
+    i {
+      font-size: 1.5em;
+      padding: 10px;
+    }
     &:hover {
-      .line {
-        background: $purple;
-      }
+      color: $purple;
+      transform: scaleX(1.3);
     }
   }
   .line {
     position: absolute;
-    right: 10px;
+    left: 10px;
     height: 2px;
     background: $dark;
   }
   .top {
-    width: 78%;
     top: 0;
+    width: 80%;
   }
   .middle {
-    width: 65%;
-    top: 8px;
+    top: 10px;
+    width: 70%;
   }
   .bottom {
+    top: 20px;
     width: 75%;
-    top: 16px;
   }
 }
