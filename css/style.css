@@ -15,6 +15,15 @@ a {
   text-decoration: none;
   cursor: pointer; }
 
+p {
+  font-family: "Karla", sans-serif;
+  font-size: 1em; }
+
+h3 {
+  font-family: "Karma", serif;
+  font-size: 1.5em;
+  font-weight: 100; }
+
 button {
   padding: 15px;
   outline: 0;
@@ -22,9 +31,13 @@ button {
   font-family: "Karla", sans-serif;
   letter-spacing: 2px;
   text-transform: uppercase;
-  font-size: 0.9em;
+  font-size: 0.8em;
   cursor: pointer;
-  transition: all 0.2s ease-out; }
+  transition: all 0.2s ease-out;
+  border: 1px solid #261F1F;
+  box-shadow: 1px 1px 2px rgba(71, 69, 69, 0.3); }
+  button:hover {
+    background: #A48ECC; }
 
 section {
   height: 100vh;
@@ -34,45 +47,134 @@ section {
 
 .landing-container {
   display: grid;
-  grid-template-columns: 1fr 1.5fr 1fr; }
-
-.landing-item1, .landing-item2, .landing-item3 {
-  border: 1px solid #261F1F; }
+  grid-template-columns: 1fr 1.5fr 1.2fr; }
 
 .landing-item1 {
   background: #FFFFFF;
-  padding: 20px;
+  padding: 30px;
   position: relative; }
   .landing-item1 .logo {
-    margin-top: 5px;
+    margin-top: 5px; }
+    .landing-item1 .logo h3 {
+      margin: 0;
+      font-family: "Karla", sans-serif;
+      font-size: 1.8em;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 8px; }
+    .landing-item1 .logo p {
+      margin: 5px 0;
+      font-size: .8em;
+      letter-spacing: 3px;
+      font-family: "Karma", serif; }
+
+.landing-desc {
+  margin-top: 25%;
+  width: 100%;
+  height: 70%; }
+
+.landing-sub {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: .8em; }
+
+.landing-line {
+  width: 30px;
+  height: 3px;
+  background: #A48ECC; }
+
+.landing-about {
+  font-size: 2.5em;
+  margin-bottom: 70px; }
+
+.landing-menu {
+  position: absolute;
+  bottom: 30px; }
+
+.menu-icon {
+  height: 35px;
+  width: 35px;
+  position: relative;
+  cursor: pointer; }
+  .menu-icon:hover .line {
+    background: #A48ECC; }
+
+.line {
+  position: absolute;
+  height: 2px;
+  border-radius: 120px;
+  background: #261F1F; }
+
+.top {
+  width: 65%;
+  top: 25%; }
+
+.middle {
+  width: 100%;
+  top: 50%; }
+
+.bottom {
+  width: 80%;
+  top: 75%; }
+
+.landing-item2 {
+  background: url("/img/landing-img.jpg") no-repeat center center fixed;
+  -webkit-background-size: auto 100%;
+  -moz-background-size: auto 100%;
+  -o-background-size: auto 100%;
+  background-size: auto 100%; }
+
+.landing-item3 {
+  display: grid;
+  grid-template-rows: 1fr 1fr; }
+
+.landing-top {
+  background: #efbfbd;
+  padding: 50px;
+  position: relative; }
+  .landing-top h3 {
+    margin-top: 40px; }
+  .landing-top .landing-line {
+    background: #FFFFFF; }
+
+.landing-link {
+  position: absolute;
+  bottom: 50px; }
+  .landing-link a {
     font-family: "Karla", sans-serif;
-    font-size: 1.2em;
-    font-weight: 700;
+    font-size: 1.5em;
+    color: #FFFFFF;
+    letter-spacing: 3px;
     text-transform: uppercase;
-    letter-spacing: 8px; }
-  .landing-item1 .menu-icon {
-    position: absolute;
-    left: 15px;
-    bottom: 10px;
-    cursor: pointer;
-    transition: all 0.4s ease; }
-    .landing-item1 .menu-icon i {
-      font-size: 1.5em;
-      padding: 10px; }
-    .landing-item1 .menu-icon:hover {
-      color: #A48ECC;
-      transform: scaleX(1.3); }
-  .landing-item1 .line {
-    position: absolute;
-    left: 10px;
-    height: 2px;
-    background: #261F1F; }
-  .landing-item1 .top {
-    top: 0;
-    width: 80%; }
-  .landing-item1 .middle {
-    top: 10px;
-    width: 70%; }
-  .landing-item1 .bottom {
-    top: 20px;
-    width: 75%; }
+    transition: all 0.2s ease-out; }
+    .landing-link a:hover {
+      color: #e0837f;
+      font-size: 1.55em; }
+  .landing-link i {
+    font-size: 0.7em; }
+
+.landing-bottom {
+  padding: 50px; }
+  .landing-bottom .landing-line {
+    background: #FCE479; }
+  .landing-bottom h3 {
+    margin-top: 40px; }
+  .landing-bottom .landing-link a {
+    color: #FCE479; }
+    .landing-bottom .landing-link a:hover {
+      color: #fad015; }
+
+.landing-catering {
+  margin: 5px 0;
+  letter-spacing: 3px;
+  text-transform: uppercase; }
+  .landing-catering span {
+    background: #FCE479; }
+
+@media only screen and (min-width: 1345px) {
+  .landing-item2 {
+    -webkit-background-size: auto 130%;
+    -moz-background-size: auto 130%;
+    -o-background-size: auto 130%;
+    background-size: auto 130%; } }

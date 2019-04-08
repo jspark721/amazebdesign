@@ -21,6 +21,17 @@ a {
   cursor: pointer;
 }
 
+p {
+  font-family: $sans;
+  font-size: 1em;
+}
+
+h3 {
+  font-family: $serif;
+  font-size: 1.5em;
+  font-weight: 100;
+}
+
 button {
   padding: 15px;
   outline: 0;
@@ -28,9 +39,14 @@ button {
   font-family: $sans;
   letter-spacing: 2px;
   text-transform: uppercase;
-  font-size: 0.9em;
+  font-size: 0.8em;
   cursor: pointer;
   transition: $fast;
+  border: 1px solid $dark;
+  box-shadow: 1px 1px 2px rgba(71, 69, 69, 0.3);
+  &:hover {
+    background: $purple;
+  }
 }
 
 
@@ -43,56 +59,161 @@ section {
 
 .landing-container {
   display: grid;
-  grid-template-columns: 1fr 1.5fr 1fr;
-}
-
-.landing-item1, .landing-item2, .landing-item3 {
-  border: 1px solid $dark;
+  grid-template-columns: 1fr 1.5fr 1.2fr;
 }
 
 .landing-item1 {
   background: $white;
-  padding: 20px;
+  padding: 30px;
   position: relative;
   .logo {
     margin-top: 5px;
+    h3 {
+      margin: 0;
+      font-family: $sans;
+      font-size: 1.8em;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 8px;
+    }
+    p {
+      margin: 5px 0;
+      font-size: .8em;
+      letter-spacing: 3px;
+      font-family: $serif;
+    }
+  }
+}
+
+.landing-desc {
+  margin-top: 25%;
+  width: 100%;
+  height: 70%;
+}
+.landing-sub {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: .8em;
+}
+.landing-line {
+  width: 30px;
+  height: 3px;
+  background: $purple;
+}
+.landing-about {
+  font-size: 2.5em;
+  margin-bottom: 70px;
+}
+.landing-menu {
+  position: absolute;
+  bottom: 30px;
+}
+.menu-icon {
+  height: 35px;
+  width: 35px;
+  position: relative;
+  cursor: pointer;
+  &:hover {
+    .line {
+      background: $purple;
+    }
+  }
+}
+.line {
+  position: absolute;
+  height: 2px;
+  border-radius: 120px;
+  background: $dark;
+}
+.top {
+  width: 65%;
+  top: 25%;
+}
+.middle {
+  width: 100%;
+  top: 50%;
+}
+.bottom {
+  width: 80%;
+  top: 75%;
+}
+
+.landing-item2 {
+  background: url('/img/landing-img.jpg') no-repeat center center fixed;
+  -webkit-background-size: auto 100%;
+  -moz-background-size: auto 100%;
+  -o-background-size: auto 100%;
+  background-size: auto 100%;
+}
+
+.landing-item3 {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.landing-top {
+  background: $pink;
+  padding: 50px;
+  position: relative;
+  h3 {
+    margin-top: 40px;
+  }
+  .landing-line {
+    background: $white;
+  }
+}
+.landing-link {
+  position: absolute;
+  bottom: 50px;
+  a {
     font-family: $sans;
-    font-size: 1.2em;
-    font-weight: 700;
+    font-size: 1.5em;
+    color: $white;
+    letter-spacing: 3px;
     text-transform: uppercase;
-    letter-spacing: 8px;
-  }
-  .menu-icon {
-    position: absolute;
-    left: 15px;
-    bottom: 10px;
-    cursor: pointer;
-    transition: $ease;
-    i {
-      font-size: 1.5em;
-      padding: 10px;
-    }
+    transition: $fast;
     &:hover {
-      color: $purple;
-      transform: scaleX(1.3);
+      color: darken($pink, 15%);
+      font-size: 1.55em;
     }
   }
-  .line {
-    position: absolute;
-    left: 10px;
-    height: 2px;
-    background: $dark;
+  i {
+    font-size: 0.7em;
   }
-  .top {
-    top: 0;
-    width: 80%;
+}
+
+.landing-bottom {
+  padding: 50px;
+  .landing-line {
+    background: $yellow;
   }
-  .middle {
-    top: 10px;
-    width: 70%;
+  h3 {
+    margin-top: 40px;
   }
-  .bottom {
-    top: 20px;
-    width: 75%;
+  .landing-link {
+    a {
+      color: $yellow;
+      &:hover {
+        color: darken($yellow, 20%);
+      }
+    }
+  }
+}
+
+.landing-catering {
+  margin: 5px 0;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  span {
+    background: $yellow;
+  }
+}
+
+@media only screen and (min-width: 1345px) {
+  .landing-item2 {
+    -webkit-background-size: auto 130%;
+    -moz-background-size: auto 130%;
+    -o-background-size: auto 130%;
+    background-size: auto 130%;
   }
 }
