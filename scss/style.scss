@@ -1,5 +1,5 @@
 @import 'variables';
-// @import 'navigation';
+@import 'navigation';
 
 html {
   overflow: scroll;
@@ -56,6 +56,7 @@ section {
 }
 
 .landing-container {
+  z-index: 10;
   display: grid;
   grid-template-columns: 1fr 1.5fr 1.2fr;
 }
@@ -106,39 +107,39 @@ section {
     background: rgba($purple, .5);
   }
 }
-.landing-menu {
-  position: absolute;
-  bottom: 30px;
-}
-.menu-icon {
-  height: 35px;
-  width: 35px;
-  position: relative;
-  cursor: pointer;
-  &:hover {
-    .line {
-      background: $purple;
-    }
-  }
-}
-.line {
-  position: absolute;
-  height: 2px;
-  border-radius: 120px;
-  background: $dark;
-}
-.top {
-  width: 65%;
-  top: 25%;
-}
-.middle {
-  width: 100%;
-  top: 50%;
-}
-.bottom {
-  width: 80%;
-  top: 75%;
-}
+// .landing-menu {
+//   position: absolute;
+//   bottom: 30px;
+// }
+// .menu-icon {
+//   height: 35px;
+//   width: 35px;
+//   position: relative;
+//   cursor: pointer;
+//   &:hover {
+//     .line {
+//       background: $purple;
+//     }
+//   }
+// }
+// .line {
+//   position: absolute;
+//   height: 2px;
+//   border-radius: 120px;
+//   background: $dark;
+// }
+// .top {
+//   width: 65%;
+//   top: 25%;
+// }
+// .middle {
+//   width: 100%;
+//   top: 50%;
+// }
+// .bottom {
+//   width: 80%;
+//   top: 75%;
+// }
 
 .landing-item2 {
   background: url('/img/landing-img.jpg') no-repeat center center fixed;
