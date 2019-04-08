@@ -377,6 +377,30 @@ section {
   height: 100%;
   right: 0;
   background: #EFE9E3; }
+  .locations-right .centered-box {
+    left: 10%;
+    top: 25%;
+    text-align: left; }
+
+.locations-box {
+  display: grid;
+  width: 80%;
+  height: 30%;
+  margin-top: 40%;
+  margin-left: 10%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px; }
+
+.address {
+  font-family: "Karma", serif; }
+
+.hours {
+  font-size: 14px;
+  font-weight: 700;
+  color: #8752a0; }
+
+.locations-margin-left {
+  margin-left: 10%; }
 
 @media only screen and (min-width: 1345px) {
   .landing-item2 {
