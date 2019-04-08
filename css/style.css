@@ -37,13 +37,11 @@ button {
   border: 1px solid #261F1F;
   box-shadow: 1px 1px 2px rgba(71, 69, 69, 0.3); }
   button:hover {
-    background: #A48ECC; }
+    background: #CCB3D8; }
 
 section {
   height: 100vh;
-  width: 100%;
-  z-index: 1;
-  background: #FFFFFF; }
+  width: 100%; }
 
 .landing-container {
   display: grid;
@@ -82,11 +80,13 @@ section {
 .landing-line {
   width: 30px;
   height: 3px;
-  background: #A48ECC; }
+  background: #CCB3D8; }
 
 .landing-about {
   font-size: 2.5em;
   margin-bottom: 70px; }
+  .landing-about span {
+    background: rgba(204, 179, 216, 0.5); }
 
 .landing-menu {
   position: absolute;
@@ -98,7 +98,7 @@ section {
   position: relative;
   cursor: pointer; }
   .menu-icon:hover .line {
-    background: #A48ECC; }
+    background: #CCB3D8; }
 
 .line {
   position: absolute;
@@ -155,22 +155,14 @@ section {
     font-size: 0.7em; }
 
 .landing-bottom {
-  padding: 50px; }
+  padding: 50px;
+  background: #CCB3D8; }
   .landing-bottom .landing-line {
-    background: #FCE479; }
+    background: #FFFFFF; }
   .landing-bottom h3 {
     margin-top: 40px; }
-  .landing-bottom .landing-link a {
-    color: #FCE479; }
-    .landing-bottom .landing-link a:hover {
-      color: #fad015; }
-
-.landing-catering {
-  margin: 5px 0;
-  letter-spacing: 3px;
-  text-transform: uppercase; }
-  .landing-catering span {
-    background: #FCE479; }
+  .landing-bottom .landing-link a:hover {
+    color: #9f70b5; }
 
 @media only screen and (min-width: 1345px) {
   .landing-item2 {

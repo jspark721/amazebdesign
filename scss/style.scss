@@ -53,8 +53,6 @@ button {
 section {
   height: 100vh;
   width: 100%;
-  z-index: 1;
-  background: $white;
 }
 
 .landing-container {
@@ -104,6 +102,9 @@ section {
 .landing-about {
   font-size: 2.5em;
   margin-bottom: 70px;
+  span {
+    background: rgba($purple, .5);
+  }
 }
 .landing-menu {
   position: absolute;
@@ -184,28 +185,19 @@ section {
 
 .landing-bottom {
   padding: 50px;
+  background: $purple;
   .landing-line {
-    background: $yellow;
+    background: $white;
   }
   h3 {
     margin-top: 40px;
   }
   .landing-link {
     a {
-      color: $yellow;
       &:hover {
-        color: darken($yellow, 20%);
+        color: darken($purple, 20%);
       }
     }
-  }
-}
-
-.landing-catering {
-  margin: 5px 0;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  span {
-    background: $yellow;
   }
 }
 
