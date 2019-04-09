@@ -28,8 +28,8 @@ function stickyFunction() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add('sticky');
     // navbar.style.backgroundColor = '#FFFFFF';
-    logo.classList.remove('nodisplay');
-    order.classList.remove('nodisplay');
+    // logo.classList.remove('nodisplay');
+    // order.classList.remove('nodisplay');
   } else {
     navbar.classList.remove('sticky');
   }

@@ -25,11 +25,29 @@ p {
   font-family: $sans;
   font-size: 1em;
 }
+h1 {
+  font-family: $font;
+  font-weight: 100;
+  font-size: 3em;
+  text-transform: uppercase;
+}
+h2 {
+  font-family: $serif;
+  font-size: 1.7em;
+  font-weight: 100;
+}
 
 h3 {
-  font-family: $serif;
+  font-family: $font;
   font-size: 1.5em;
   font-weight: 100;
+}
+
+.pink {
+  background: $pink;
+}
+.blue {
+  background: $blue;
 }
 
 button {
@@ -55,6 +73,12 @@ button {
   padding: 40px;
   font-size: 1.2em;
   letter-spacing: 3px;
+}
+.sign-up-btn {
+  border-radius: 25px;
+  padding: 17px;
+  margin-left: 10px;
+  background: $yellow;
 }
 
 section {
@@ -87,7 +111,7 @@ section {
     margin: 5px 0;
     font-size: .8em;
     letter-spacing: 3px;
-    font-family: $serif;
+    font-family: $font;
   }
 }
 
@@ -95,6 +119,10 @@ section {
   margin-top: 25%;
   width: 100%;
   height: 70%;
+  .main-btn {
+    margin-right: 10px;
+    margin-top: -10px;
+  }
 }
 .sub-header {
   text-transform: uppercase;
@@ -110,6 +138,8 @@ section {
 .landing-about {
   font-size: 2.5em;
   margin-bottom: 70px;
+  font-family: $serif;
+  font-weight: 100;
   span {
     background: rgba($purple, .5);
   }
@@ -176,14 +206,15 @@ section {
   bottom: 50px;
   a {
     font-family: $sans;
-    font-size: 1.5em;
+    font-size: 1.4em;
     color: $white;
     letter-spacing: 3px;
+    font-weight: 700;
     text-transform: uppercase;
     transition: $fast;
     &:hover {
       color: darken($pink, 15%);
-      font-size: 1.55em;
+      font-size: 1.45em;
     }
   }
   i {
@@ -217,13 +248,11 @@ section {
 .centered-box {
   position: absolute;
   width: 70%;
-  top: 27%;
+  top: 25%;
   left: 15%;
   text-align: center;
   h1 {
-    font-family: $serif;
-    font-weight: 100;
-    font-size: 3em;
+    text-transform: none;
   }
 }
 .about-container2 {
@@ -245,6 +274,7 @@ section {
   background-size: cover;
 }
 
+
 .locations-container {
   position: relative;
   width: 100%;
@@ -256,17 +286,17 @@ section {
   width: 45%;
   left: 0;
   background: url('/img/cocobowl.jpg') no-repeat left center fixed;
-  -webkit-background-size: auto 105%;
-  -moz-background-size: auto 105%;
-  -o-background-size: auto 105%;
-  background-size: auto 105%;
+  -webkit-background-size: auto 120%;
+  -moz-background-size: auto 120%;
+  -o-background-size: auto 120%;
+  background-size: auto 120%;
 }
 .locations-right {
   position: absolute;
   width: 58%;
   height: 100%;
   right: 0;
-  background: $cream;
+  background: $white;
   .centered-box {
     left: 10%;
     top: 25%;
@@ -282,17 +312,68 @@ section {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 15px;
 }
+
 .address {
-  font-family: $serif;
+  font-family: $font;
 }
 .hours {
   font-size: 14px;
-  font-weight: 700;
-  color: darken($purple, 30%);
+  font-weight: 500;
+  margin-top: 30px;
 }
 
 .locations-margin-left {
   margin-left: 10%;
+}
+
+.email-container {
+  position: relative;
+  height: 50vh;
+  background: $pink;
+}
+
+.fa-bolt {
+  color: $yellow;
+  opacity: .8;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+input[type=email] {
+  border-radius: 25px;
+  padding: 15px;
+  width: 250px;
+  outline: 0;
+  border: 1px solid $dark;
+  font-family: $font;
+  box-shadow: 1px 1px 2px rgba(71, 69, 69, 0.3);
+}
+
+.menu-container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('/img/flavor.jpg') no-repeat bottom center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.menu-box {
+  height: 60%;
+  width: 65%;
+  max-width: 900px;
+  text-align: center;
+  h3 {
+    font-size: 1.3em;
+    margin-bottom: 40px;
+  }
+  span {
+    font-style: italic;
+  }
 }
 
 @media only screen and (min-width: 1345px) {
