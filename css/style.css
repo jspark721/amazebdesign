@@ -227,7 +227,7 @@ button {
 
 .bigger-btn {
   background: #efe9e3;
-  padding: 40px;
+  padding: 30px;
   font-size: 1.2em;
   letter-spacing: 3px; }
 
@@ -344,6 +344,15 @@ section {
   height: 50vh;
   background: #EFE9E3;
   position: relative; }
+  .about-container .centered-box {
+    top: 18%; }
+
+.fa-heart {
+  margin-bottom: 15px;
+  color: #efbfbd;
+  opacity: .8;
+  font-size: 1.3em;
+  margin-bottom: 10px; }
 
 .centered-box {
   position: absolute;
@@ -381,7 +390,7 @@ section {
   height: 100%;
   width: 45%;
   left: 0;
-  background: url("/img/cocobowl.jpg") no-repeat left center fixed;
+  background: url("/img/cocobowl.jpg") no-repeat bottom center;
   -webkit-background-size: auto 120%;
   -moz-background-size: auto 120%;
   -o-background-size: auto 120%;
